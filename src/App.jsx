@@ -18,25 +18,25 @@ const handleSelectedCourse = (course)=>{
   let x = course.credit;
   const totalHour = x + creditHour;
   const totalHourRemaining =  20 - totalHour;
-  console.log(totalHourRemaining)
+  
   if(totalHour > 20){
     alert("Bala aso naki")
-    return;
+  return;
   }
-  
-  else{
-    if(remainingHour < 0){
-      alert(remainingHour);
-      return
-    }
+    // if(remainingHour < 0){
+    //   alert("gajakhor");
+    
+    //   return;
+    // }
     setCreditHour(totalHour)
+  
   const newList = [...selectedCourse,course];
   setRemainingHour(totalHourRemaining);
   
 setSelectedCourse(newList);
   }
   }
-}
+
 
   return (
     <>
