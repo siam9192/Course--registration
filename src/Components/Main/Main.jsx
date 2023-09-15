@@ -16,7 +16,7 @@ const Main = ({handleSelectedCourse,selectedCourse,creditHour,remainingHour}) =>
    <Toast></Toast>
         <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 w-[70%] gap-5'>
 
- 
+ {
     courses.map(course=>{
     return<CourseCard course= {course} handleSelectedCourse = {handleSelectedCourse} key = {course.id}></CourseCard>
     })
