@@ -10,18 +10,15 @@ function App() {
   const [selectedCourse,setSelectedCourse] = useState([]);
   const [creditHour,setCreditHour] = useState(0);
   const [remainingHour,setRemainingHour] = useState(20);
-  const [showToast,setShowToast] = useState(false)  ;
-const [showToast2,setShowToast2] = useState(false)
-  const handleShowToast = (value)=>{
-setShowToast(value)
-  }
-  const handleShowToast2 = (val)=>{
-    setShowToast2(val)
-  }
+ 
 const handleSelectedCourse = (course)=>{
   const duplicate = selectedCourse.find(item=> item.id === course.id);
   if(duplicate){
-   setShowToast2(true)
+
+    toast.error("You can't add duplicate", {
+      position: toast.POSITION.TOP_RIGHT
+    }
+    )
     return;
   }
   else{
@@ -38,11 +35,7 @@ const handleSelectedCourse = (course)=>{
 });
   return;
   }
-    // if(remainingHour < 0){
-    //   alert("gajakhor");
-    
-    //   return;
-    // }
+
     setCreditHour(totalHour)
   
   const newList = [...selectedCourse,course];
@@ -55,7 +48,7 @@ setSelectedCourse(newList);
 
   return (
     <>
-      <section className='bg-[#F3F3F3] relative  px-10 '>
+      <section className='inter bg-[#F3F3F3] relative  px-10'>
      <h1 className="text-3xl text-black text-center py-2 font-semibold">Course Registration</h1>
      <ToastContainer/>
 <Main handleSelectedCourse = {handleSelectedCourse} selectedCourse = {selectedCourse} creditHour = {creditHour} remainingHour = {remainingHour}></Main>
