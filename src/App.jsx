@@ -3,8 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react'
 import './App.css'
 import Main from './Components/Main/Main'
-import Toast from './Components/Toast/Toast';
-import ToastDuplicate from './Components/Toast/Tost_2';
+
 
 function App() {
   const [selectedCourse,setSelectedCourse] = useState([]);
@@ -15,7 +14,7 @@ const handleSelectedCourse = (course)=>{
   const duplicate = selectedCourse.find(item=> item.id === course.id);
   if(duplicate){
 
-    toast.error("You can't add duplicate", {
+    toast.error("Each course can only be selected once", {
       position: toast.POSITION.TOP_RIGHT
     }
     )
@@ -30,7 +29,7 @@ const handleSelectedCourse = (course)=>{
   
   if(totalHour > 20){
 
-  toast.error('Maximum credit hour', {
+  toast.error('You have exceeded the maximum credit hour limit', {
     position: toast.POSITION.TOP_RIGHT
 });
   return;
