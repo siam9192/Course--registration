@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types'
 const Cart = ({selectedCourse,creditHour,remainingHour}) => {
     
     return (
@@ -17,10 +17,15 @@ const Cart = ({selectedCourse,creditHour,remainingHour}) => {
                }
             </div>
             <div className='text-xl '> 
-                <h2>Total Credit Hour : {creditHour}</h2>
+                <h2 className='py-1'>Total Credit Hour : {creditHour}</h2>
             </div>
         </div>
     );
+}
+Cart.propTypes = {
+    selectedCourse: PropTypes.array,
+    creditHour: PropTypes.number,
+    remainingHour:PropTypes.number
 }
 
 export default Cart;

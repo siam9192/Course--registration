@@ -1,8 +1,7 @@
 import { FiBookOpen } from 'react-icons/fi';
-
+import PropTypes from 'prop-types'
 const CourseCard = ({course,handleSelectedCourse}) => {
-//   console.log(handleSelectedCourse)
-    
+
 
     return (
         <div className="p-4 bg-white rounded-lg">
@@ -26,5 +25,8 @@ const CourseCard = ({course,handleSelectedCourse}) => {
         </div>
     );
 }
-
+CourseCard.propTypes = {
+  handleSelectedCourse:PropTypes.func,
+  course:PropTypes.object
+}
 export default CourseCard;

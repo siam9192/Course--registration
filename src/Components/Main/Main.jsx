@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import CourseCard from './course_card';
 import Cart from '../Cart/cart';
-import Toast from '../Toast/Toast';
+import PropTypes from 'prop-types'
 
 const Main = ({handleSelectedCourse,selectedCourse,creditHour,remainingHour}) => {
+    
     const [courses,setCourse] = useState([]);
     useEffect(()=>{
         fetch('course.json')
@@ -13,7 +14,7 @@ const Main = ({handleSelectedCourse,selectedCourse,creditHour,remainingHour}) =>
 
     return (
         <div className='max-w-[1400px] mx-auto  gap-4 py-10 relative flex'>
-   <Toast></Toast>
+   
         <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 w-[70%] gap-5'>
 
  {
@@ -29,5 +30,10 @@ const Main = ({handleSelectedCourse,selectedCourse,creditHour,remainingHour}) =>
         
     );
 }
-
+Main.propTypes = {
+    handleSelectedCourse:PropTypes.func,
+    selectedCourse: PropTypes.array,
+    creditHour: PropTypes.number,
+    remainingHour:PropTypes.number
+}
 export default Main;
