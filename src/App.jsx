@@ -8,7 +8,7 @@ function App() {
   const [remainingHour,setRemainingHour] = useState(0);
 const handleSelectedCourse = (course)=>{
   const duplicate = selectedCourse.find(item=> item.id === course.id);
-  if(duplicate){
+  if(duplicate){-
     alert('This course already has been added');
     return;
   }
