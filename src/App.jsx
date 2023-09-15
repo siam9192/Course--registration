@@ -26,11 +26,12 @@ const handleSelectedCourse = (course)=>{
   let x = course.credit;
   const totalHour = x + creditHour;
   const totalHourRemaining =  20 - totalHour;
-  
+
   if(totalHour > 20){
 
-  toast.error('You have exceeded the maximum credit hour limit', {
+  toast.error('The maximum credit hour limit  has been  exceeded', {
     position: toast.POSITION.TOP_RIGHT
+    
 });
   return;
   }
