@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CourseCard from './course_card';
 import Cart from '../Cart/cart';
+import Toast from '../Toast/Toast';
 
 const Main = ({handleSelectedCourse,selectedCourse,creditHour,remainingHour}) => {
     const [courses,setCourse] = useState([]);
@@ -11,8 +12,8 @@ const Main = ({handleSelectedCourse,selectedCourse,creditHour,remainingHour}) =>
     },[])
 
     return (
-        <div className='max-w-[1300px] mx-auto flex gap-8 py-10'>
-
+        <div className='max-w-[1300px] mx-auto  gap-8 py-10 relative flex'>
+   <Toast></Toast>
         <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 w-[70%] gap-5'>
 
  {
@@ -22,7 +23,10 @@ const Main = ({handleSelectedCourse,selectedCourse,creditHour,remainingHour}) =>
  }
         </div>
         <Cart selectedCourse = {selectedCourse} creditHour = {creditHour} remainingHour = {remainingHour}></Cart>
+   
+
         </div>
+        
     );
 }
 
