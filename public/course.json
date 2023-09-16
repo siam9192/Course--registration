@@ -3,7 +3,7 @@
 "id": 1,
 "image": "https://i.ibb.co/NFCjgmg/Rectangle-2-2.png",
 "title": "Introduction to C Programming",
-"description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+"description": "C is a powerful general-purpose programming language. It can be used to develop software like operating systems, databases, compilers, and so on.",
 "price": 15000,
 "credit": 1
 },
@@ -11,7 +11,7 @@
  "id": 2,
  "image": "https://i.ibb.co/cN3WRp2/Rectangle-2-3.png",
     "title": "Introduction to Algorithms",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+    "description": "Algorithms: Key to efficient problem-solving in computing, from sorting to searching and beyond.",
     "price": 25000,
     "credit": 2
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "image": "https://i.ibb.co/17bG76R/Rectangle-2-4.png",
         "title": "Introduction to C++ for DSA",
-        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "description": "C++: A powerful language for Data Structures & Algorithms (DSA), blending OOP with high performance to efficiently tackle complex problems.",
         "price": 1000,
         "credit": 10
         },
@@ -27,7 +27,7 @@
             "id":4,
             "image": "https://i.ibb.co/XyyPYFT/Rectangle-3.png",
             "title": "Basic Data Structures",
-            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+            "description": "Basic Data Structures: Core foundations of organizing and managing data, essential for efficient information processing",
             "price": "",
             "credit": 5
             },
@@ -35,7 +35,7 @@
                 "id": 5,
                 "image": "https://i.ibb.co/jLN9HFw/Rectangle-2.png",
                 "title": "Introduction to OOP Python",
-                "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+                "description": "OOP Python: Object-Oriented Programming in Python, emphasizing modularity and reusability through classes and objects.",
                 "price": 1900,
                 "credit": 5
                 },
@@ -43,7 +43,7 @@
                     "id": 6,
                     "image": "https://i.ibb.co/3RNgY3r/Rectangle-2-5.png",
                     "title": "Software Engineering",
-                    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+                    "description": "Software Engineering: Systematic approach to design, develop, and maintain software, ensuring quality, scalability, and reliability.",
                     "price": 2300,
                     "credit": 2
                     },
@@ -51,7 +51,7 @@
                         "id": 7,
                         "image": "https://i.ibb.co/tZP6kyf/Rectangle-3-1.png",
                         "title": "AWS, Cloud Computing",
-                        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+                        "description": "AWS & Cloud Computing: Leverage Amazon Web Services for scalable, on-demand resources, revolutionizing IT infrastructure..",
                         "price": 3500,
                         "credit": 5
                         },
@@ -59,7 +59,7 @@
                             "id": 8,
                             "image": "https://i.ibb.co/gPxgsB3/Rectangle-2-1.png",
                             "title": "Database (MySQL)",
-                            "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+                            "description": "Database (MySQL): Powerful, open-source relational database system, essential for data storage and management in applications.",
                             "price": 19000,
                             "credit": 5
                             },
@@ -67,7 +67,7 @@
                                 "id": 9,
                                 "image": "https://i.ibb.co/HnPHgpC/Rectangle-2-6.png",
                                 "title": "Problem-Solving Part",
-                                "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+                                "description": "Problem-Solving: The art of finding effective solutions, requiring analysis, creativity, and systematic approaches to complex challenges.",
                                 "price": 2300,
                                 "credit": 2
                                 }

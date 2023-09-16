@@ -14,7 +14,7 @@ const handleSelectedCourse = (course)=>{
   const duplicate = selectedCourse.find(item=> item.id === course.id);
   if(duplicate){
 
-    toast.error("Each course can only be selected once", {
+    toast.error("Already selected", {
       position: toast.POSITION.TOP_RIGHT
     }
     )
@@ -48,8 +48,8 @@ setSelectedCourse(newList);
 
   return (
     <>
-      <section className='inter bg-[#F3F3F3] relative  px-10'>
-     <h1 className="text-3xl text-black text-center py-2 font-semibold">Course Registration</h1>
+      <section className='inter bg-[#F3F3F3] relative  px-10 min-h-[100vh]'>
+      <h1 className="text-3xl text-black text-center pt-10 font-semibold">Course Registration</h1>
      <ToastContainer/>
 <Main handleSelectedCourse = {handleSelectedCourse} selectedCourse = {selectedCourse} creditHour = {creditHour} remainingHour = {remainingHour}></Main>
 

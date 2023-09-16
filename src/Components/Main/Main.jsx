@@ -13,7 +13,8 @@ const Main = ({handleSelectedCourse,selectedCourse,creditHour,remainingHour}) =>
     },[])
 
     return (
-        <div className='max-w-[1400px] mx-auto  gap-4 py-10 relative flex'>
+        
+        <div className='max-w-[1400px] mx-auto  gap-4 py-10 flex'>
    
         <div className='grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 w-[70%] gap-5'>
 
